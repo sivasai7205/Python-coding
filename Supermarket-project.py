@@ -17,7 +17,17 @@ def enterProducts():
 
     #definging function to calculate the subtotal of all 
 def getPrice(product,quantity):
-    priceData = {'Biscuit':3, 'Chicken':5, 'Egg':1, 'Fish':3, 'Coke':2, 'Bread':2, 'Apple':3, 'Onion':3, 'Milk':2, 'Butter':3}
+    priceData = {
+        'Biscuit':3, 
+        'Chicken':5, 
+        'Egg':1, 
+        'Fish':3, 
+        'Coke':2, 
+        'Bread':2, 
+        'Apple':3, 
+        'Onion':3, 
+        'Milk':2, 
+        'Butter':3}
     subtotal = priceData[product]*quantity
     print(product + ':$' + str(priceData[product]) + 'x' + str(quantity) + '=' +
      str(subtotal))
